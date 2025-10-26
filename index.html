@@ -6,15 +6,73 @@
   <meta name="description" content="AURA Follow-Up — Automated patient aftercare for cosmetic clinics." />
   <title>AURA Follow-Up</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* subtle card shadow for luxury feel */
+    .shadow-elegant { box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+    .bg-gradient-primary { background-image: linear-gradient(135deg, #ec4899 0%, #a78bfa 100%); }
+    .bg-gradient-subtle { background-image: linear-gradient(180deg, #fff 0%, #fff 50%, #fdf2f8 100%); }
+  </style>
 </head>
 <body class="bg-white text-gray-800 font-sans">
   <!-- Hero Section -->
-  <section class="text-center py-20 px-6 bg-gradient-to-b from-pink-50 to-white">
-    <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">Automated Aftercare That Feels Personal</h1>
-    <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-      AURA sends thoughtful, branded post-treatment check-ins to every client — so your team saves hours and your patients feel genuinely cared for.
-    </p>
-    <a href="#signup" class="inline-block bg-pink-500 text-white px-8 py-3 rounded-full text-lg hover:bg-pink-600 transition">Join the Early Access List</a>
+  <section class="relative overflow-hidden bg-gradient-subtle">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+      <!-- Copy -->
+      <div class="text-center md:text-left">
+        <span class="inline-block text-sm tracking-wider uppercase text-pink-600 font-semibold">AURA Follow-Up</span>
+        <h1 class="mt-3 text-4xl md:text-6xl font-extrabold leading-tight text-gray-900">
+          Automated Aftercare <br class="hidden md:block"/>
+          <span class="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">That Feels Personal</span>
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-xl">
+          AURA sends thoughtful, branded post‑treatment check‑ins to every client — so your team saves hours and your patients feel genuinely cared for.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 sm:items-center">
+          <a href="#signup" class="inline-block bg-pink-500 text-white px-8 py-3 rounded-full text-lg hover:bg-pink-600 transition">Join the Early Access List</a>
+          <a href="#how" class="inline-block text-pink-600 hover:text-pink-700">See how it works →</a>
+        </div>
+      </div>
+
+      <!-- Visual: Phone mockup with REAL message content (no lorem ipsum) -->
+      <div class="relative">
+        <div class="relative w-full max-w-sm mx-auto rounded-[2rem] bg-white border border-gray-200 shadow-elegant p-4">
+          <!-- speaker notch -->
+          <div class="w-24 h-1.5 bg-gray-200 rounded-full mx-auto mb-4"></div>
+          <div class="space-y-3">
+            <!-- clinic bubble -->
+            <div class="max-w-[90%] rounded-2xl px-4 py-3 bg-pink-50 text-gray-800">
+              <p class="text-sm leading-relaxed">
+                Hi Emily — this is <strong>GlowBar</strong> checking in after your <strong>lip filler</strong> yesterday. How are you feeling today? Any swelling or bruising? <em>(Reply: fine / mild / severe)</em>
+              </p>
+              <p class="mt-1 text-[11px] text-gray-500">Day 1 • Automated aftercare</p>
+            </div>
+            <!-- patient reply -->
+            <div class="flex justify-end">
+              <div class="max-w-[90%] rounded-2xl px-4 py-2 bg-indigo-600 text-white">
+                <p class="text-sm">mild</p>
+              </div>
+            </div>
+            <!-- clinic guidance -->
+            <div class="max-w-[90%] rounded-2xl px-4 py-3 bg-pink-50 text-gray-800">
+              <p class="text-sm leading-relaxed">
+                Thanks! Mild swelling is common in the first 48 hours. Keep icing 10 mins on/off and avoid strenuous exercise today. Reply <strong>HELP</strong> if anything worries you.
+              </p>
+              <p class="mt-1 text-[11px] text-gray-500">Care tip • Sent automatically</p>
+            </div>
+            <!-- day 3 check -->
+            <div class="max-w-[90%] rounded-2xl px-4 py-3 bg-pink-50 text-gray-800">
+              <p class="text-sm leading-relaxed">
+                Quick check — any <strong>new pain, fever, or oozing</strong> today? <em>(Y/N)</em>
+              </p>
+              <p class="mt-1 text-[11px] text-gray-500">Day 3 • Escalates if Y</p>
+            </div>
+          </div>
+        </div>
+        <!-- soft glows -->
+        <div class="absolute -top-6 -right-8 w-40 h-40 rounded-full bg-pink-200 blur-3xl opacity-60"></div>
+        <div class="absolute -bottom-6 -left-8 w-40 h-40 rounded-full bg-purple-200 blur-3xl opacity-60"></div>
+      </div>
+    </div>
   </section>
 
   <!-- Problem Section -->
@@ -34,21 +92,21 @@
     <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
       <div class="bg-white p-6 rounded-xl shadow-sm">
         <h3 class="text-xl font-bold mb-3">Smart Text Sequences</h3>
-        <p>Custom day-1, day-3, and day-7 follow-ups for Botox, filler, laser, or peel clients.</p>
+        <p>Custom day‑1, day‑3, and day‑7 follow‑ups for Botox, filler, laser, or peel clients.</p>
       </div>
       <div class="bg-white p-6 rounded-xl shadow-sm">
-        <h3 class="text-xl font-bold mb-3">Auto-Alerts</h3>
+        <h3 class="text-xl font-bold mb-3">Auto‑Alerts</h3>
         <p>AURA detects concerning responses (e.g., severe swelling, redness) and flags them to your team instantly.</p>
       </div>
       <div class="bg-white p-6 rounded-xl shadow-sm">
         <h3 class="text-xl font-bold mb-3">Rebooking Reminders</h3>
-        <p>After recovery, AURA sends friendly reminders for 3-month touch-ups — boosting retention automatically.</p>
+        <p>After recovery, AURA sends friendly reminders for 3‑month touch‑ups — boosting retention automatically.</p>
       </div>
     </div>
   </section>
 
   <!-- How It Works -->
-  <section class="py-16 px-6 max-w-5xl mx-auto text-center">
+  <section id="how" class="py-16 px-6 max-w-5xl mx-auto text-center">
     <h2 class="text-3xl font-semibold mb-8">How It Works</h2>
     <div class="grid md:grid-cols-3 gap-6">
       <div class="p-6 bg-pink-50 rounded-lg">
@@ -57,7 +115,7 @@
       </div>
       <div class="p-6 bg-pink-50 rounded-lg">
         <span class="block text-2xl font-bold mb-2">2️⃣</span>
-        <p>AURA sends follow-ups via SMS in your brand voice.</p>
+        <p>AURA sends follow‑ups via SMS in your brand voice.</p>
       </div>
       <div class="p-6 bg-pink-50 rounded-lg">
         <span class="block text-2xl font-bold mb-2">3️⃣</span>
@@ -69,7 +127,7 @@
   <!-- CTA / Form Section -->
   <section id="signup" class="bg-pink-100 py-16 px-6 text-center">
     <h2 class="text-3xl font-semibold mb-6">Be one of the first clinics to try AURA.</h2>
-    <p class="text-gray-700 mb-8 max-w-xl mx-auto">We’re inviting select med spas and aesthetic clinics to join our early-access program. You’ll get exclusive pricing and hands-on onboarding.</p>
+    <p class="text-gray-700 mb-8 max-w-xl mx-auto">We’re inviting select med spas and aesthetic clinics to join our early‑access program. You’ll get exclusive pricing and hands‑on onboarding.</p>
 
     <!-- Airtable Embed -->
     <div class="max-w-2xl mx-auto">
