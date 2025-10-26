@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AURA Follow-Up — Automated patient aftercare for cosmetic clinics." />
+  <title>AURA Follow-Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-6 bg-gradient-to-b from-pink-50 to-white">
+    <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">Automated Aftercare That Feels Personal</h1>
+    <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+      AURA sends thoughtful, branded post-treatment check-ins to every client — so your team saves hours and your patients feel genuinely cared for.
+    </p>
+    <a href="#signup" class="inline-block bg-pink-500 text-white px-8 py-3 rounded-full text-lg hover:bg-pink-600 transition">Join the Early Access List</a>
+  </section>
 
+  <!-- Problem Section -->
+  <section class="py-16 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-6">Clinics spend hours manually following up.</h2>
+    <p class="text-center text-gray-600 mb-10">After every Botox, filler, or laser appointment, your staff sends texts, checks voicemails, and documents responses. It's tedious — and when messages slip through the cracks, patient satisfaction and rebookings suffer.</p>
+    <ul class="grid md:grid-cols-3 gap-6 text-gray-700">
+      <li class="bg-pink-50 p-6 rounded-lg shadow-sm">Staff spend hours on repetitive check-ins</li>
+      <li class="bg-pink-50 p-6 rounded-lg shadow-sm">Missed aftercare messages cause unhappy clients</li>
+      <li class="bg-pink-50 p-6 rounded-lg shadow-sm">Inconsistent experience across practitioners</li>
+    </ul>
+  </section>
+
+  <!-- Solution Section -->
+  <section class="bg-gray-50 py-16 px-6">
+    <h2 class="text-3xl font-semibold text-center mb-12">AURA handles follow-ups automatically — in your tone and brand.</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white p-6 rounded-xl shadow-sm">
+        <h3 class="text-xl font-bold mb-3">Smart Text Sequences</h3>
+        <p>Custom day-1, day-3, and day-7 follow-ups for Botox, filler, laser, or peel clients.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-sm">
+        <h3 class="text-xl font-bold mb-3">Auto-Alerts</h3>
+        <p>AURA detects concerning responses (e.g., severe swelling, redness) and flags them to your team instantly.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-sm">
+        <h3 class="text-xl font-bold mb-3">Rebooking Reminders</h3>
+        <p>After recovery, AURA sends friendly reminders for 3-month touch-ups — boosting retention automatically.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-16 px-6 max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-8">How It Works</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="p-6 bg-pink-50 rounded-lg">
+        <span class="block text-2xl font-bold mb-2">1️⃣</span>
+        <p>Add your patient after each treatment.</p>
+      </div>
+      <div class="p-6 bg-pink-50 rounded-lg">
+        <span class="block text-2xl font-bold mb-2">2️⃣</span>
+        <p>AURA sends follow-ups via SMS in your brand voice.</p>
+      </div>
+      <div class="p-6 bg-pink-50 rounded-lg">
+        <span class="block text-2xl font-bold mb-2">3️⃣</span>
+        <p>You only see alerts when a patient needs attention.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Form Section -->
+  <section id="signup" class="bg-pink-100 py-16 px-6 text-center">
+    <h2 class="text-3xl font-semibold mb-6">Be one of the first clinics to try AURA.</h2>
+    <p class="text-gray-700 mb-8 max-w-xl mx-auto">We’re inviting select med spas and aesthetic clinics to join our early-access program. You’ll get exclusive pricing and hands-on onboarding.</p>
+    <form action="YOUR_SHEETMONKEY_ENDPOINT" method="POST" class="max-w-md mx-auto space-y-4">
+      <input type="text" name="Clinic Name" placeholder="Clinic Name" class="w-full p-3 rounded-md border border-gray-300" required>
+      <input type="text" name="Contact Name" placeholder="Your Name" class="w-full p-3 rounded-md border border-gray-300" required>
+      <input type="email" name="Email" placeholder="Email" class="w-full p-3 rounded-md border border-gray-300" required>
+      <input type="tel" name="Phone" placeholder="Phone (optional)" class="w-full p-3 rounded-md border border-gray-300">
+      <button type="submit" class="w-full bg-pink-500 text-white py-3 rounded-full text-lg hover:bg-pink-600 transition">Request Early Access</button>
+    </form>
+    <p class="text-sm text-gray-500 mt-4">We’ll only contact you about early access. No spam — ever.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 text-gray-500 text-sm">
+    <p>AURA Follow-Up — the modern way to care for patients after every treatment.</p>
+  </footer>
+</body>
+</html>
